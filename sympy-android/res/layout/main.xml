@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/xMLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:focusable="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#000000"
+        android:focusable="true"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/logoBackground"
+            android:contentDescription="@string/logoContentDesc"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/logoBackground" >
+
+            <EditText
+                android:id="@+id/xEt"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:focusableInTouchMode="true"
+                android:hint="@string/txtBoxHint" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="54dp"
+                android:layout_height="fill_parent"
+                android:background="@color/buttonBack"
+                android:text="@string/buttonTxt"
+                android:textColor="@color/buttonTxt" />
+        </LinearLayout>
+
+        <WebView
+            android:id="@+id/webView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/xK1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <include
+            android:id="@+id/xKeyBoard"
+            layout="@layout/keyboard" >
+        </include>
+    </RelativeLayout>
+
+</RelativeLayout>
